@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Loxion Legends | Home</title>
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="Image/ficov.png">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="home.css">
+
+  <!-- JS -->
+  <script src="scripts/main.js" defer></script>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <div class="header-overlay">
+      <img src="Image/logo.png" alt="Loxion Legends Logo" class="logo">
+      <h1 class="gold-text">LOXION LEGENDS</h1>
+      <p class="tagline">GREATNESS STARTS IN THE LOXION</p>
+      <a href="signup.html" class="button button1">Join The Movement</a>
+    </div>
+  </header>
+
+ 
+
+  
+
+
+  <!-- Navigation -->
+  <nav>
+    <ul>
+      <li><a href="home.html" class="active">Home</a></li>
+      <li><a href="service.html">Services</a></li>
+      <li><a href="about.html">About Us</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="sponsorship.html">Sponsorships</a></li>
+      <li><a href="videos.html">Album</a></li>
+      <li><a href="mission.html">More</a></li>
+    </ul>
+  </nav>
+
+  <div id="dynamicWelcome"></div>
+
+  <!-- About Section -->
+  <section class="about">
+    <h2>Our Story</h2>
+    <p>
+      <span class="highlight">Loxion Legends</span> is a youth-driven initiative helping township kids explore sports and follow their dreams.
+      We create opportunities, build confidence, and showcase kasi talent through events, media, and mentorship.
+    </p>
+    <p>
+      Sifuna ukwakha ikusasa labantwana basekasi — using the power of sport to inspire, guide, and uplift. We believe in teamwork and turning passion into purpose.
+    </p>
+    <blockquote>
+      <span class="highlight">“Ikasi linetalent — sifuna ukubonisa.”</span><br>
+      Our mission is to prove that talent is everywhere.
+    </blockquote>
+  </section>
+
+  <section class="gallery">
+  <h2>Moments From Kasi</h2>
+  <div class="gallery-grid">
+    <img src="Image/Picture1.jpg" alt="Kasi Sport Moment 1" class="gallery-item">
+    <img src="Image/Picture3.jpg" alt="Kasi Sport Moment 2" class="gallery-item">
+    <img src="Image/Picture4.png" alt="Kasi Sport Moment 3" class="gallery-item">
+  </div>
+</section>
+
+<div id="lightbox" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.9); justify-content:center; align-items:center;">
+  <span id="closeLightbox" style="position:absolute; top:20px; right:20px; font-size:30px; color:gold; cursor:pointer;">&times;</span>
+  <img id="lightboxImg" src="" style="max-width:90%; max-height:80%; border-radius:10px;">
+</div>
+
+
+  <!-- Featured People Section -->
+<section class="featured">
+  <h2>Featured People</h2>
+  <div class="featured-grid">
+    <div class="person">
+      <img src="Image/person3.jpg" alt="Person 1">
+      <h3>Epiphanny Prince</h3>
+      <p>“Believe in yourself, even when others doubt you.”</p>
+    </div>
+    <div class="person">
+      <img src="Image/person2.jpeg" alt="Person 2">
+      <h3>Siya Kolisi</h3>
+      <p>“You don’t play rugby for yourself; you play for your teammates and the people who believe in you.”</p>
+    </div>
+    <div class="person">
+      <img src="Image/person1.jpg" alt="Person 3">
+      <h3>Lucas D.</h3>
+      <p>“Football in South Africa is not just a game. It’s the voice of the people.”</p>
+    </div>
+  </div>
+</section>
+
+
+  <!-- Hashtags -->
+  <section class="hashtags">
+    <p>#PhumaLaKasiScoreLikeABoss!</p>
+    <p>#KasiKingsBallinTilTheSunShine!</p>
+    <p>#KasiChampions!</p>
+  </section>
+
+  <!-- Floating Chat Widget -->
+  <div id="chatWidget">
+    <button id="chatButton" title="Chat with us">💬</button>
+    <div id="chatBox" class="hidden">
+      <div class="chat-header">
+        <h4>Chat with Loxion Legends</h4>
+        <span id="closeChat">×</span>
+      </div>
+      <div class="chat-body">
+        <p>Hi 👋 Want to know more or ask something?</p>
+        <textarea id="chatMessage" placeholder="Type your message..."></textarea>
+        <button id="sendChat">Send</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Back to Top Button -->
+  <button id="backToTop" title="Go to top">↑</button>
+
+  
+
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 Loxion Legends. All rights reserved.</p>
+    <h3>Let’s phanda — join the team today!</h3>
+  </footer>
+
+  
+<!-- WELCOME POPUP -->
+<div id="welcomeOverlay">
+  <div class="welcome-box">
+    <img src="Image/logo.png" alt="Loxion Legends Logo" class="welcome-logo">
+    <h2>Welcome to <span class="highlight">Loxion Legends!</span></h2>
+    <p>Greatness starts in the <span class="highlight">Loxion</span>. Discover opportunities, talent, and inspiration from our kasi heroes 💪</p>
+    <button id="closeWelcome" class="button button1">Let's Go!</button>
+  </div>
+</div>
+
+
+</body>
+</html>
+
+
+
+
+
+

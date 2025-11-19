@@ -1,0 +1,459 @@
+/* ========== GENERAL ========== */
+body {
+  margin: 0;
+  font-family: 'Poppins', Arial, sans-serif;
+  background-color: #f9f9f9;
+  color: #222;
+}
+
+.hidden {
+  display: none !important;
+}
+
+.highlight {
+  color: gold;
+  font-weight: bold;
+}
+
+/* ========== HEADER ========== */
+header {
+  background-image: url('Image/header.png');
+  background-size: cover;
+  background-position: center;
+  color: white;
+  text-align: center;
+  padding: 100px 20px;
+  position: relative;
+}
+
+.header-overlay {
+  background: rgba(0, 0, 0, 0.55);
+  padding: 40px;
+  border-radius: 10px;
+  display: inline-block;
+}
+
+.logo {
+  width: 150px;
+  height: auto;
+}
+
+.gold-text {
+  color: gold;
+  font-size: 2.8em;
+  margin-top: 10px;
+  letter-spacing: 2px;
+}
+
+.tagline {
+  font-style: italic;
+  font-size: 1.2em;
+  margin-bottom: 20px;
+}
+
+/* ========== NAVIGATION ========== */
+nav {
+  background: #000;
+  text-align: center;
+  padding: 10px 0;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav li {
+  display: inline;
+  margin: 0 12px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+nav a:hover, nav a.active {
+  color: gold;
+}
+
+/* ========== ABOUT ========== */
+.about {
+  padding: 40px 20px;
+  max-width: 900px;
+  margin: auto;
+  line-height: 1.6;
+}
+
+.about h2 {
+  text-align: center;
+  color: gold;
+  margin-bottom: 20px;
+}
+
+blockquote {
+  background: #111;
+  color: gold;
+  padding: 20px;
+  border-left: 5px solid gold;
+  border-radius: 6px;
+  font-style: italic;
+}
+
+/* ========== GALLERY ========== */
+.gallery {
+  background-color: #fff;
+  padding: 40px 0;
+  text-align: center;
+}
+
+.gallery h2 {
+  color: gold;
+}
+
+.gallery-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.gallery img {
+  width: 300px;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+}
+
+.gallery img:hover {
+  transform: scale(1.05);
+}
+
+/* Featured People */
+.featured {
+  text-align: center;
+  padding: 60px 20px;
+  background-color: #000000;
+}
+
+.featured h2 {
+  margin-bottom: 40px;
+  font-size: 2rem;
+  color: #ffd000;
+}
+
+.featured-grid {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.person {
+  background-color: #ffd000;
+  border-radius: 10px;
+  padding: 20px;
+  width: 250px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.person img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+.person h3 {
+  margin: 10px 0 5px;
+  color: #222;
+}
+
+.person p {
+  font-size: 0.9rem;
+  color: #555;
+}
+
+.person:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+}
+
+
+/* ========== HASHTAGS ========== */
+.hashtags {
+  background: #000;
+  color: gold;
+  text-align: center;
+  padding: 20px;
+  font-weight: bold;
+}
+
+/* ========== FOOTER ========== */
+footer {
+  background-image: url('Image/footer1.jpg');
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  color: white;
+  padding: 30px 10px;
+}
+
+footer h3 {
+  margin-top: 8px;
+  color: gold;
+  font-style: italic;
+}
+
+/* ========== BUTTONS ========== */
+.button {
+  border: 2px solid gold;
+  color: gold;
+  padding: 12px 25px;
+  background: transparent;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 6px;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.button:hover {
+  background: gold;
+  color: black;
+  transform: translateY(-2px);
+}
+
+/* Back-to-top */
+#backToTop {
+  display: none;
+  position: fixed;
+  bottom: 40px;
+  left: 40px;
+  background: black;
+  color: gold;
+  border: 2px solid gold;
+  border-radius: 50%;
+  padding: 12px 15px;
+  cursor: pointer;
+  transition: 0.3s;
+  z-index: 2000;
+}
+
+#backToTop:hover {
+  background: gold;
+  color: black;
+}
+
+/* ========== CHAT WIDGET ========== */
+#chatWidget {
+  position: fixed;
+  bottom: 40px;
+  right: 100px;
+  z-index: 999;
+}
+
+#chatButton {
+  background-color: black;
+  color: gold;
+  border: 2px solid gold;
+  border-radius: 50%;
+  width: 55px;
+  height: 55px;
+  font-size: 24px;
+  cursor: pointer;
+  transition: 0.3s;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+}
+
+#chatButton:hover {
+  background-color: gold;
+  color: black;
+  transform: scale(1.1);
+}
+
+/* Chat popup box */
+#chatBox {
+  position: absolute;
+  bottom: 70px;
+  right: 0;
+  background: #111;
+  border: 2px solid gold;
+  border-radius: 10px;
+  width: 260px;
+  color: white;
+  font-family: 'Poppins', sans-serif;
+  box-shadow: 0 8px 12px rgba(0,0,0,0.5);
+}
+
+.chat-header {
+  background: gold;
+  color: black;
+  padding: 8px 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 8px 8px 0 0;
+  font-weight: bold;
+}
+
+.chat-header h4 {
+  margin: 0;
+}
+
+.chat-header span {
+  cursor: pointer;
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+.chat-body {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.chat-body textarea {
+  width: 100%;
+  height: 60px;
+  border-radius: 6px;
+  border: 1px solid gold;
+  background: #000;
+  color: gold;
+  padding: 5px;
+  resize: none;
+}
+
+.chat-body button {
+  background: gold;
+  color: black;
+  border: none;
+  padding: 8px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.chat-body button:hover {
+  background: #ffd700;
+}
+
+
+
+/* ========== WELCOME POPUP ========== */
+#welcomeOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.85);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.6s ease, visibility 0.6s ease;
+}
+
+#welcomeOverlay.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.welcome-box {
+  background: #111;
+  border: 2px solid gold;
+  border-radius: 12px;
+  color: white;
+  text-align: center;
+  max-width: 400px;
+  padding: 30px 25px;
+  box-shadow: 0 0 20px rgba(255, 215, 0, 0.3);
+  animation: popIn 0.8s ease;
+}
+
+.welcome-box h2 {
+  color: gold;
+  margin-bottom: 10px;
+}
+
+.welcome-box p {
+  line-height: 1.5;
+  font-size: 1rem;
+}
+
+.welcome-logo {
+  width: 120px;
+  height: auto;
+  margin-bottom: 15px;
+}
+
+@keyframes popIn {
+  0% { transform: scale(0.5); opacity: 0; }
+  100% { transform: scale(1); opacity: 1; }
+}
+
+/* Fade-out animation */
+.fade-out {
+  opacity: 0 !important;
+  visibility: hidden !important;
+  transition: opacity 0.6s ease, visibility 0.6s ease;
+}
+
+.accordion {
+  background-color: gold;
+  color: #222;
+  cursor: pointer;
+  padding: 15px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 1rem;
+  transition: 0.3s;
+  border-radius: 5px;
+  margin-bottom: 8px;
+}
+
+.accordion:hover {
+  background-color: #ffcc00cc;
+}
+
+.panel {
+  padding: 0 15px;
+  display: none;
+  background-color: #111;
+  color: gold;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+#welcome-msg,
+.welcome-msg {
+  margin: 20px auto;
+  padding: 20px;
+  font-size: 22px;
+  text-align: center;
+  background: #111;
+  border: 2px solid gold;
+  border-radius: 10px;
+  width: 90%;
+  max-width: 600px;
+  color: gold;
+  animation: fadeIn 1.2s ease;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+

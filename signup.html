@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Enquiry | LOXION LEGENDS</title>
+    <!-- Favicon for browser tab -->
+    <link rel="icon" href="Image/ficov.png" type="image/png">
+    <!-- Link to external CSS -->
+    <link rel="stylesheet" href="signup.css" />
+</head>
+<body>
+    <!-- Main container for the enquiry form -->
+    <div class="signup-container">
+        <h2>Make an Enquiry</h2>
+        
+        <!-- Form starts here -->
+        <form id="enquiryForm" action="#" method="POST" novalidate>
+            
+            <!-- Full Name input -->
+            <label for="name">Full Name:</label>
+            <input type="text" id="enquiryName" name="name" required 
+                   placeholder="Your full name" autocomplete="name" />
+
+            <!-- Email input -->
+            <label for="email">Email Address:</label>
+            <input type="email" id="enquiryEmail" name="email" required 
+                   placeholder="you@example.com" autocomplete="email" />
+            
+            <!-- Phone input -->
+            <label for="phone">Phone Number (10 digits):</label>
+            <input type="tel" id="enquiryPhone" name="phone" 
+                   pattern="[0-9]{10}" 
+                   title="Ten digits only, e.g., 0711234567" 
+                   required placeholder="071 123 4567" autocomplete="tel" />
+
+            <!-- Enquiry type select dropdown -->
+            <label for="type">Enquiry Type:</label>
+            <select id="enquiryType" name="type" required>
+                <option value="" disabled selected>Select the nature of your enquiry</option>
+                <option value="service">Services (e.g., coaching, training)</option>
+                <option value="product">Product/Merchandise Order</option>
+                <option value="volunteer">Volunteer Opportunity</option>
+                <option value="sponsorship">Sponsorship/Donation</option>
+            </select>
+            
+            <!-- Enquiry details textarea -->
+            <label for="details">Enquiry Details (Min 30 characters):</label>
+            <textarea id="enquiryDetails" name="details" rows="5" required minlength="30" 
+                      placeholder="Provide details about your request."></textarea>
+            
+            <!-- Placeholder for error messages -->
+            <span class="error-message" id="enquiryError" role="alert"></span>
+
+            <!-- Submit button -->
+            <button type="submit">Submit Enquiry</button>
+        </form>
+
+        <!-- Optional footer link -->
+        <p class="footer-note"><a href="contact.html">Need general contact?</a></p>
+    </div>
+    
+    <!-- Link to external JS -->
+    <script src="scripts/main.js"></script> 
+</body>
+</html>
+

@@ -1,0 +1,228 @@
+/* ================= BODY & GLOBAL ================= */
+body {
+  margin: 0;
+  background-color: #000; /* Dark theme */
+  font-family: Arial, sans-serif;
+  color: #fff;
+  line-height: 1.6;
+}
+
+/* ================= LOGO ================= */
+.logo-container {
+  background-color: black;
+  text-align: center;
+  padding: 20px 0;
+}
+
+.logo-container img {
+  width: 250px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  border-radius: 10px; /* subtle style */
+  box-shadow: 0 4px 15px rgba(255, 215, 0, 0.4);
+}
+
+/* ========== NAVIGATION ========== */
+nav {
+  background: #000;
+  text-align: center;
+  padding: 10px 0;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav li {
+  display: inline;
+  margin: 0 12px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+nav a:hover, nav a.active {
+  color: gold;
+}
+
+
+/* ================= CONTAINER ================= */
+.container {
+  max-width: 1000px;
+  margin: 30px auto;
+  padding: 30px 20px;
+  background-color: #fff;
+  color: #000;
+  border-radius: 12px;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.3);
+}
+
+/* ================= HEADINGS ================= */
+h1 {
+  color: #000;
+  border-bottom: 3px solid gold;
+  padding-bottom: 8px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+h2 {
+  margin-top: 25px;
+  color: #000;
+  border-left: 4px solid gold;
+  padding-left: 10px;
+  margin-bottom: 15px;
+}
+
+/* ================= TEXT ================= */
+p {
+  margin-bottom: 20px;
+  font-size: 1rem;
+}
+
+ul {
+  padding-left: 25px;
+  margin-bottom: 20px;
+}
+
+li {
+  margin-bottom: 10px;
+}
+
+/* Highlight important phrases */
+span.highlight {
+  color: gold;
+  font-weight: bold;
+}
+
+/* ================= SECTIONS ================= */
+section {
+  margin-bottom: 50px;
+}
+
+/* Fade-in animation for scroll effect */
+section {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.7s ease;
+}
+
+section.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ================= FOOTER ================= */
+footer {
+  background-image: url('Image/footer1.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 40px 20px;
+  text-align: center;
+  color: white;
+  font-style: italic;
+  border-top: 3px solid gold;
+}
+
+footer h3 {
+  margin-top: 10px;
+  font-weight: normal;
+}
+
+/* ================= RESPONSIVE ================= */
+@media (max-width: 900px) {
+  nav {
+    text-align: center;
+  }
+
+  h1, h2 {
+    font-size: 1.5rem;
+  }
+
+  .container {
+    padding: 20px;
+  }
+}
+
+@media (max-width: 600px) {
+  h1, h2 {
+    font-size: 1.2rem;
+  }
+}
+
+/* ================= SUCCESS STORIES ================= */
+.success-stories {
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+.success-stories h2 {
+  color: black;
+  border-bottom: 3px solid gold;
+  padding-bottom: 8px;
+  margin-bottom: 30px;
+}
+
+.story-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  gap: 20px;
+}
+
+.story-card {
+  background-color: #fff;
+  border-radius: 12px;
+  width: 300px;
+  padding: 15px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.3);
+  transition: transform 0.3s, box-shadow 0.3s;
+  opacity: 0;
+  transform: translateY(30px);
+}
+
+.story-card img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.story-card h3 {
+  color: gold;
+  margin-bottom: 10px;
+}
+
+.story-card p {
+  font-size: 0.9rem;
+  color: black;
+}
+
+.story-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px gold;
+}
+
+/* Fade-in animation for scroll */
+.story-card.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .story-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .story-card {
+    width: 90%;
+  }
+}
